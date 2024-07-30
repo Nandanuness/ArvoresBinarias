@@ -7,8 +7,8 @@ public class ArvoreBinaria {
 
     public void inserir(int valor) {
         No novoNo = new No(valor);
-        if (this.raiz == null) { // verificação de árvore
-            this.raiz = novoNo;
+        if (this.raiz == null) { // se não houver nenhum nó
+            this.raiz = novoNo; // primeiro nó raiz
         } else { // percorre a árvore para encontrar a posição de inserção
             No atual = this.raiz; // começa do nó raiz
             No pai = null; // inicia pai como null
